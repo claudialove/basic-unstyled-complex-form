@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<h1>Register</h1>
+
+<body>
+    <form>
+        <!-- for first name and last name inputs -->
+        <label for="firstname">First Name: </label>
+        <input name="register" id="firstname" type="name" placeholder="John" required>
+
+        <label for="lastname">Last Name: </label>
+        <input name="register" id="lastname" type="name" placeholder="Smith" required>
+
+        <!-- for gender selection radio buttons -->
+        <div>
+            <label for="male"> Male</label>
+            <input name="register" id="male" type="radio">
+
+            <label for="female"> Female</label>
+            <input name="register" id="female" type="radio">
+
+            <label for="other"> Other</label>
+            <input name="register" id="other" type="radio">
+        </div>
+
+        <!-- for email and password inputs -->
+        <div>
+            <label for="email">Email: </label>
+            <input name="register" id="email" type="email" placeholder="your email" required>
+
+            <label for="password">Password: </label>
+            <input name="register" id="password" type="password" placeholder="your password" required minlength="8">
+        </div>
+        <!-- for birthday drop-down selectors -->
+        <div>
+            <label>Birthday: </label>
+            <select name="Month">
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>Jun</option>
+                <option>Jul</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+            </select>
+            <select name="Day">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <select name="Year">
+                <option>1972</option>
+                <option>1973</option>
+                <option>1974</option>
+            </select>
+        </div>
+        <!-- agree to terms and conditions -->
+        <div>
+            <label>I agree to terms and conditions <input name="register" type="checkbox" required></label>
+        </div>
+        <!-- submit button -->
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+<!-- notes to self -->
+
+<!-- an input tag (use id)  pairs with a label tag (use for)-->
+
+<!-- input tags contain the type (name, password, email radio, checkbox ) and the name attribute -->
+
+<!-- dropdowns need a select tag and nested option tags inside to create drop down choices (value attribute is what gets saved to the db and area between open and close tags is what the user sees) -->
+
+<!-- requiredness is a boolean that goes at the end of the input tag -->
+
+<!-- password length validation can go in the input tag using the minlength attribute -->
+
+<!--         <select name="color">
+            <option value="happy">: )</option>
+            <option value="neutral">:|</option>
+            <option value="sad">:(</option>
+        </select> -->
